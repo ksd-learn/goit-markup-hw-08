@@ -1,0 +1,18 @@
+@import 'utils/variable';
+@import 'utils/default';
+@import 'utils/default-components';
+
+
+/* header */
+@import 'components/header';
+
+
+/* Стили для <main> STUDIO */
+@import 'components/main-studio';
+
+/* Стили для <main> PORTFOLIO */
+@import 'components/main-portfolio';
+
+
+/* footer */
+@import 'components/footer';

@@ -44,25 +44,13 @@ body {
 
 /* блочная разметка CONTAINER и SECTION */
 .container {
-    padding: 10px 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding: 0 15px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
-// .section {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

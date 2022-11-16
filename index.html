@@ -18,31 +18,61 @@
     <header>
         <div class="header container">
             <a href="./index.html" class="logo">Web<span>Studio</span></a>
-            <nav>
-                <ul class="header-nav">
-                    <li class="item"><a href="./index.html" class="header-nav_color link current">Студія</a></li>
-                    <li class="item"><a href="portfolio.html" class="header-nav_color link">Портфоліо</a></li>
-                    <li class="item"><a href="#" class="header-nav_color link">Контакти</a></li>
+            <button type="button" 
+                    class="header-btn js-open-menu" 
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+            >
+                <svg class="icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                    <use href="./images/sprite-icon.svg#menu"></use>
+                </svg>
+            </button>
+            <div class="header-menu js-menu-container" id="mobile-menu">
+                <button type="button" class="header-btn js-close-menu">
+                    <svg class="icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use href="./images/sprite-icon.svg#close"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="header-nav">
+                        <li class="item"><a href="./index.html" class="header-nav_color link current">Студія</a></li>
+                        <li class="item"><a href="portfolio.html" class="header-nav_color link">Портфоліо</a></li>
+                        <li class="item"><a href="#" class="header-nav_color link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="header-connect">
+                    <li class="item">
+                        <a href="mailto:info@devstudio.com" class="header-connect_color mobil link">
+                            <svg class="icon icon-envelope">
+                                <use href="./images/sprite-icon.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="tel:+380961111111" class="header-connect_color link">
+                            <svg class="icon icon-smartphone">
+                                <use href="./images/sprite-icon.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="header-connect">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="header-connect_color link">
-                        <svg class="icon icon-envelope">
-                            <use href="./images/sprite-icon.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="header-connect_color link">
-                        <svg class="icon icon-smartphone">
-                            <use href="./images/sprite-icon.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                <ul class="header-social">
+                    <li class="header-social_box">
+                        <a href="#" class="link">Instagram</a>
+                    </li>
+                    <li class="header-social_box">
+                        <a href="#" class="link">Twitter</a>
+                    </li>
+                    <li class="header-social_box">
+                        <a href="#" class="link">Facebook</a>
+                    </li>
+                    <li class="header-social_box">
+                        <a href="#" class="link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -438,8 +468,12 @@
         </div>
     </div>
     
-<script src="./js/modal.js"></script>
-<script src="./js/form-speaker.js"></script>
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script> -->
+    <script defer src="/js/mobile-menu.js"></script>
+    <script src="/js/modal.js"></script>
+    <!-- <script src="/js/form-speaker.js"></script> -->
     
 </body>
 </html>

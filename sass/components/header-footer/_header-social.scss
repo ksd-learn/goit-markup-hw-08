@@ -1,0 +1,36 @@
+.header-social {
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.header-social_box{
+    list-style: none;
+    .link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: $a-hover-focus--btn;
+        padding: 0 10px;
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+        text-decoration: none;
+    }
+    
+    &:first-child {
+        .link {
+            padding-left: 0;
+            border-left: none;
+        }
+    }
+
+    &:last-child {
+        .link {
+            padding-right: 0;
+        }
+    }
+}

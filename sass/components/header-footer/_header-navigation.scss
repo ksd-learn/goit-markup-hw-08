@@ -1,11 +1,31 @@
 .header-nav {
-    display: flex;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 
-    .item {
-        +.item {
-            margin-left: 50px;
-        }
-    } 
+    @media screen and (max-width: 767px) {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 302px;
+
+        .item {
+            +.item {
+                margin-top: 32px;
+            }
+        } 
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.1;
+        
+        .item {
+            +.item {
+                margin-left: 50px;
+            }
+        } 
+    }
 }
 
 .header-nav_color {
@@ -20,16 +40,19 @@
 
 .current {
     color: $a-hover-focus--btn;
-    position: relative;
 
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: #188CE8;
-        border-radius: 2px;
-        bottom: -34px;
+    @media screen and (min-width: 768px) {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #188CE8;
+            border-radius: 2px;
+            bottom: -34px;
+        }
     }
 }
