@@ -16,8 +16,16 @@
 
 .team-list {
     display: flex;
-    column-gap: 30px;
+    gap: 30px;
     @extend %font;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+    
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+    }
 
     .title {
         @extend %font;
@@ -26,11 +34,24 @@
     }
 
     >.item {
-        width: 270px;
+        @media screen and (max-width: 767px) {
+            max-width: 450px;
+            padding-bottom: 16px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            padding-bottom: 16px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            padding-bottom: 30px;
+        }
+
         background-color: $text-backgr-white;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        padding-bottom: 30px;
     }
 
     img {
@@ -38,9 +59,9 @@
     }
 
     .networks {
-        padding-left: 32px;
-        padding-right: 32px;
+        justify-content: center;
         margin-top: 16px;
+        max-width: 450px;
     }
 }
 

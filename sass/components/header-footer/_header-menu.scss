@@ -12,6 +12,7 @@
 
         &.is-open {
             display: block;
+            overflow-y: auto;
         }
     }
 

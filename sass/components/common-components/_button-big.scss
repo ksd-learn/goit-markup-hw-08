@@ -1,5 +1,5 @@
 .btn {
-    
+        height: 50px;
         color: $text-backgr-white;
         font-family: inherit;
         font-weight: 700;
@@ -17,4 +17,19 @@
     &:focus {
         background-color: $btn-hover-focus;
     }
+
+        @media screen and (max-width: 399px) {
+            width: 155px;
+            font-size: 14px;
+            line-height: 0.9;
+        }
+    
+        @media screen and (min-width: 400px) {
+            width: 42vw;
+
+        }
+    
+        @media screen and (min-width: 480px) {
+            width: 200px;
+        }
 }

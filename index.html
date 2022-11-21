@@ -157,7 +157,17 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="item">
-                        <img src="./images/studio/team1.jpg" alt="Ігор Дем'яненко" width="270">
+                        <img 
+                            srcset="./images/studio/team1-270.jpg 270w,
+                                    ./images/studio/team1-354.jpg 354w,
+                                    ./images/studio/team1-450.jpg 450w,
+                                    ./images/studio/team1-540.jpg 540w, 
+                                    ./images/studio/team1-708.jpg 708w, 
+                                    ./images/studio/team1-900.jpg 900w
+                                    " 
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 450px"
+                            src="./images/studio/team1-270.jpg"
+                            alt="Ігор Дем'яненко" >
                         <h3 class="title">Ігор Дем'яненко</h3>
                         <p>Product Designer</p>
                         <ul class="networks">
@@ -192,7 +202,17 @@
                         </ul>
                     </li>
                     <li class="item">
-                        <img src="./images/studio/team2.jpg" alt="Ольга Рєпіна" width="270">
+                        <img 
+                            srcset="./images/studio/team2-270.jpg 270w,
+                                    ./images/studio/team2-354.jpg 354w,
+                                    ./images/studio/team2-450.jpg 450w,
+                                    ./images/studio/team2-540.jpg 540w, 
+                                    ./images/studio/team2-708.jpg 708w, 
+                                    ./images/studio/team2-900.jpg 900w
+                                    " 
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 450px"
+                            src="./images/studio/team1-270.jpg" 
+                            alt="Ольга Рєпіна">
                         <h3 class="title">Ольга Рєпіна</h3>
                         <p>Frontend Developer</p>
                         <ul class="networks">
@@ -227,7 +247,17 @@
                         </ul>
                     </li>
                     <li class="item">
-                        <img src="./images/studio/team3.jpg" alt="Микола Тарасов" width="270">
+                        <img 
+                            srcset="./images/studio/team3-270.jpg 270w,
+                                    ./images/studio/team3-354.jpg 354w,
+                                    ./images/studio/team3-450.jpg 450w,
+                                    ./images/studio/team3-540.jpg 540w, 
+                                    ./images/studio/team3-708.jpg 708w, 
+                                    ./images/studio/team3-900.jpg 900w
+                                    " 
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 450px"
+                            src="./images/studio/team3-270.jpg" 
+                            alt="Микола Тарасов">
                         <h3 class="title">Микола Тарасов</h3>
                         <p>Marketing</p>
                         <ul class="networks">
@@ -262,7 +292,17 @@
                         </ul>
                     </li>
                     <li class="item">
-                        <img src="./images/studio/team4.jpg" alt="Михайло Єрмаков" width="270">
+                        <img 
+                            srcset="./images/studio/team4-270.jpg 270w,
+                                    ./images/studio/team4-354.jpg 354w,
+                                    ./images/studio/team4-450.jpg 450w,
+                                    ./images/studio/team4-540.jpg 540w, 
+                                    ./images/studio/team4-708.jpg 708w, 
+                                    ./images/studio/team4-900.jpg 900w
+                                    " 
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 450px"
+                            src="./images/studio/team4-270.jpg" 
+                            alt="Михайло Єрмаков">
                         <h3 class="title">Михайло Єрмаков</h3>
                         <p>UI Designer</p>
                         <ul class="networks">
@@ -402,11 +442,11 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-mail">
                 <p class="footer-join__title">Підпишіться на розсилку</p>
-                <form class="footer__mail js-speaker-join" >
+                <form class="footer-mail__form js-speaker-join" >
                     <label class="visually-hidden" for="email">Пошта</label>
-                    <input class="footer__mail_style" type="email" name="email" id="email" placeholder="E-mail">
+                    <input class="footer-mail_style" type="email" name="email" id="email" placeholder="E-mail">
                     <button class="btn footer-mail__btn" type="submit" >
                         Підписатися
                         <svg class="icon icon-send">

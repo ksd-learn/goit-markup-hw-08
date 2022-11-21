@@ -12,13 +12,8 @@
     @media screen and (min-width: 768px) {
         min-height: 80px;
     }
-}
 
-@import 'header-footer/logo';
-@import 'header-footer/header-btn';
-@import 'header-footer/header-menu';
-
-.logo {
+    .logo {
     @media screen and (min-width: 768px) {
         margin-right: 88px;
     }
@@ -27,3 +22,10 @@
         margin-right: 93px;
     }
 }
+}
+
+@import 'header-footer/logo';
+@import 'header-footer/header-btn';
+@import 'header-footer/header-menu';
+
+
