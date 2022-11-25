@@ -17,9 +17,19 @@
 </head>
 
 <body>
-    <header>
-        <div class="header container">
-            <a href="./index.html" class="logo">Web<span>Studio</span></a>
+    <div class="header container">
+        <a href="./index.html" class="logo">Web<span>Studio</span></a>
+        <button type="button" class="header-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                <use href="./images/sprite-icon.svg#menu"></use>
+            </svg>
+        </button>
+        <div class="header-menu js-menu-container" id="mobile-menu">
+            <button class="header-btn js-close-menu" type="button" >
+                <svg class="icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                    <use href="./images/sprite-icon.svg#close"></use>
+                </svg>
+            </button>
             <nav>
                 <ul class="header-nav">
                     <li class="item"><a href="./index.html" class="header-nav_color link">Студія</a></li>
@@ -29,7 +39,7 @@
             </nav>
             <ul class="header-connect">
                 <li class="item">
-                    <a href="mailto:info@devstudio.com" class="header-connect_color link">
+                    <a href="mailto:info@devstudio.com" class="header-connect_color mobil link">
                         <svg class="icon icon-envelope">
                             <use href="./images/sprite-icon.svg#envelope"></use>
                         </svg>
@@ -45,7 +55,22 @@
                     </a>
                 </li>
             </ul>
+            <ul class="header-social">
+                <li class="header-social_box">
+                    <a href="#" class="link">Instagram</a>
+                </li>
+                <li class="header-social_box">
+                    <a href="#" class="link">Twitter</a>
+                </li>
+                <li class="header-social_box">
+                    <a href="#" class="link">Facebook</a>
+                </li>
+                <li class="header-social_box">
+                    <a href="#" class="link">LinkedIn</a>
+                </li>
+            </ul>
         </div>
+    </div>
     </header>
 
     <main>
@@ -74,7 +99,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample1.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample1-370.jpg 1x, 
+                                                    ./images/portfolio/sample1-370-2x.jpg 2x"
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample1-354.jpg 1x, 
+                                                    ./images/portfolio/sample1-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample1-450.jpg 1x, 
+                                                    ./images/portfolio/sample1-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample1-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -89,7 +125,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample2.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample2-370.jpg 1x, 
+                                                    ./images/portfolio/sample2-370-2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample2-354.jpg 1x, 
+                                                    ./images/portfolio/sample2-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample2-450.jpg 1x, 
+                                                    ./images/portfolio/sample2-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -104,7 +151,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample3.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample3-370.jpg 1x, 
+                                                    ./images/portfolio/sample3-370-2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample3-354.jpg 1x, 
+                                                    ./images/portfolio/sample3-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample3-450.jpg 1x, 
+                                                    ./images/portfolio/sample3-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample3-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -119,7 +177,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample4.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample4-370.jpg 1x, 
+                                                    ./images/portfolio/sample4-370-2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample4-354.jpg 1x, 
+                                                    ./images/portfolio/sample4-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample4-450.jpg 1x, 
+                                                    ./images/portfolio/sample4-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample4-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -134,7 +203,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample5.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample5-370.jpg 1x, 
+                                                    ./images/portfolio/sample5-370-2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample5-354.jpg 1x, 
+                                                    ./images/portfolio/sample5-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample5-450.jpg 1x, 
+                                                    ./images/portfolio/sample5-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample5-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -149,7 +229,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample6.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample7-370.jpg 1x, 
+                                                    ./images/portfolio/sample7-370-2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample7-354.jpg 1x, 
+                                                    ./images/portfolio/sample7-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample7-450.jpg 1x, 
+                                                    ./images/portfolio/sample7-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample7-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -164,7 +255,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample7.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample7-370.jpg 1x, 
+                                                    ./images/portfolio/sample7-370-2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample7-354.jpg 1x, 
+                                                    ./images/portfolio/sample7-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample7-450.jpg 1x, 
+                                                    ./images/portfolio/sample7-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample7-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -179,7 +281,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample8.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample8-370.jpg 1x, 
+                                                    ./images/portfolio/sample8-370-2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample8-354.jpg 1x, 
+                                                    ./images/portfolio/sample8-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample8-450.jpg 1x, 
+                                                    ./images/portfolio/sample8-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample8-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -194,7 +307,18 @@
                     <li class="item">
                         <a href="#" class="project link">
                             <div class="project__img">
-                                <img src="./images/portfolio/sample9.jpg" alt="технокряк">
+                                <picture>
+                                    <source srcset="./images/portfolio/sample9-370.jpg 1x, 
+                                                    ./images/portfolio/sample9-370-2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                    <source srcset="./images/portfolio/sample9-354.jpg 1x, 
+                                                    ./images/portfolio/sample9-354-2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                    <source srcset="./images/portfolio/sample9-450.jpg 1x, 
+                                                    ./images/portfolio/sample9-450-2x.jpg 2x" 
+                                            media="(max-width: 767px)">
+                                    <img src="./images/portfolio/sample9-450.jpg" alt="технокряк">
+                                </picture>
                                 <p class="project__img__overlay">
                                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                     отримати вичерпні відомості про компанію чи приватну особу.
@@ -225,8 +349,7 @@
                         </li>
                         <li class="item"><a href="mailto:info@devstudio.com"
                                 class="footer-list_color link">info@devstudio.com</a></li>
-                        <li class="item"><a href="tel:+380961111111" class="footer-list_color link">+38 096 111 11 11</a>
-                        </li>
+                        <li class="item"><a href="tel:+380961111111" class="footer-list_color link">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
@@ -263,11 +386,11 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-mail">
                 <p class="footer-join__title">Підпишіться на розсилку</p>
-                <form class="footer__mail js-speaker-join">
+                <form class="footer-mail__form js-speaker-join">
                     <label class="visually-hidden" for="email">Пошта</label>
-                    <input class="footer__mail_style" type="email" name="email" id="email" placeholder="E-mail">
+                    <input class="footer-mail_style" type="email" name="email" id="email" placeholder="E-mail">
                     <button class="btn footer-mail__btn" type="submit">
                         Підписатися
                         <svg class="icon icon-send">
@@ -278,6 +401,11 @@
             </div>
         </div>
     </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="/js/mobile-menu.js"></script>
 
 </body>
 

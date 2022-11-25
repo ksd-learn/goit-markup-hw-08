@@ -1,18 +1,25 @@
 .header-menu {
     @media screen and (max-width: 767px) {
+        width: 100vw;
+        height: 100vh;
         display: none;
-        width: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         background-color: $text-backgr-white;
         padding-left: 40px;
         padding-top: 48px;
         padding-bottom: 48px;
+        overflow-y: auto;
 
         &.is-open {
-            display: block;
-            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            z-index: 999;
+        }
+
+        nav {
+            margin-bottom: auto;
         }
     }
 
